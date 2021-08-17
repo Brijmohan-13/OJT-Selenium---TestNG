@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="login" />
+				<exclude name="users" />
+			</run>
+		</groups>
+
+
+
+		<classes>
+			<class name="com.demo.Include_Exclude" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+<!-- test,classes,methods can be run parallel -->

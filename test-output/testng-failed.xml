@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.demo.DependsOnGroups">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="checkHeader"/>
+          <include name="validLogin"/>
+          <include name="verifyLogoutButton"/>
+        </methods>
+      </class> <!-- com.demo.DependsOnGroups -->
+      <class name="com.demo.Include_Exclude">
+        <methods>
+          <include name="checkTitle"/>
+          <include name="validLogin"/>
+          <include name="chechHeader"/>
+          <include name="test02"/>
+          <include name="test03"/>
+        </methods>
+      </class> <!-- com.demo.Include_Exclude -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
